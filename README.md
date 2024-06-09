@@ -31,6 +31,9 @@ Data Params: Required: { "country": "string" }
 Functionality: This endpoint allows users to add a new country to the database. It includes validation to ensure that the country name meets specific criteria, such as a minimum length requirement, to maintain data quality and consistency.  
 Success Response: Code: 201, Content: JSON object of created country  
 Example: curl -X POST https://countries-api-1-onug.onrender.com/api/countries -H "Content-Type: application/json" -d '{"country": "NewCountry"}'
+Using POSTMAN 
+![image](https://github.com/kamila-wilczynska/Countries-API/assets/107350829/83fa1db8-a080-4ed7-9782-7cc95c7fd0a5)
+
 
 
 ### Update an Existing Country
@@ -55,6 +58,9 @@ Success Response:
 Code: 200 OK  
 Content: Returns the JSON object of the country with updated data.  
 Example: curl -X PUT https://countries-api-1-onug.onrender.com/api/countries/2 -H "Content-Type: application/json" -d '{"country": "Japan"}'
+Using POSTMAN
+![image](https://github.com/kamila-wilczynska/Countries-API/assets/107350829/bbca888a-6e2c-4c35-8a2a-e267ddb2dc1a)
+
 
 
 
@@ -70,6 +76,9 @@ Success Response:
 Code: 200 OK  
 Content: Returns the JSON object of the country that was successfully deleted.  
 Example: curl -X DELETE https://countries-api-1-onug.onrender.com/api/countries/3
+Using POSTMAN
+![image](https://github.com/kamila-wilczynska/Countries-API/assets/107350829/39b56dc7-4c04-4411-b9b6-4e16a42a0775)
+
 
 
 
