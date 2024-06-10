@@ -3,6 +3,8 @@ const app = express();
 const Joi = require('joi');
 const countries = require('./countriesData.js');
 
+//middlware to help to serve the static files
+app.use('/images', express.static('public/images'));
 
 //create router for countries
 const countriesRouter = express.Router();
