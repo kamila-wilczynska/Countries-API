@@ -24,6 +24,13 @@ Success Response: Code: 200, Content: JSON object of a single country
 Error Response: Code: 404 NOT FOUND, Content: { error : "Country not found" }  
 Example: curl -X GET https://countries-api-1-onug.onrender.com/api/countries/1
 
+### Get country image
+Url: /images/country.jpg
+Method: GET  
+URL Params: Required: country=[string]
+Example: https://countries-api-1-onug.onrender.com/images/brasil.jpg
+
+
 ### Create a New Country
 URL: /api/countries  
 Method: POST  
