@@ -22,8 +22,9 @@ countriesRouter.get('/', (req, res) => {
 app.use('/api/countries', countriesRouter);
 
 // Opcjonal:'/'
-countriesRouter.get('/', (req, res) => {
-	res.send('Welcome to the Countries API! =)');
+// Welcome route at the application root
+app.get('/', (req, res) => {
+    res.send('Welcome to the Countries API!');
 });
 
 //get country by id
